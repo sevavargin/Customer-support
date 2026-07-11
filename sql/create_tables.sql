@@ -9,7 +9,6 @@ CREATE TABLE customers (
 CREATE TABLE products (
     product_id INTEGER PRIMARY KEY,
     product_name TEXT NOT NULL UNIQUE,
-    purchase_date DATE
 );
 
 
@@ -41,9 +40,11 @@ CREATE TABLE tickets (
 
     ticket_channel TEXT NOT NULL,
 
-    first_response_time REAL,
+    first_response_time TEXT,
 
-    time_to_resolution REAL,
+    time_to_resolution TEXT,
+
+    purchase_date TEXT
 
     customer_satisfaction_rating INTEGER
         CHECK(customer_satisfaction_rating BETWEEN 1 AND 5),

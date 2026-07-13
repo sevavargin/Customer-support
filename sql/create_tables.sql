@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS tickets;
+DROP TABLE IF EXISTS ticket_types;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS customers;
+
 CREATE TABLE customers (
     customer_id INTEGER PRIMARY KEY,
     customer_name TEXT NOT NULL,
@@ -8,44 +13,29 @@ CREATE TABLE customers (
 
 CREATE TABLE products (
     product_id INTEGER PRIMARY KEY,
-    product_name TEXT NOT NULL UNIQUE,
+    product_name TEXT NOT NULL UNIQUE
 );
-
 
 CREATE TABLE ticket_types (
     ticket_type_id INTEGER PRIMARY KEY,
     ticket_type_name TEXT NOT NULL UNIQUE
 );
 
-
 CREATE TABLE tickets (
-
     ticket_id INTEGER PRIMARY KEY,
-
     customer_id INTEGER NOT NULL,
-
     product_id INTEGER NOT NULL,
-
     ticket_type_id INTEGER NOT NULL,
-
+    purchase_date DATE,
     ticket_subject TEXT NOT NULL,
-
     ticket_description TEXT,
-
     ticket_status TEXT NOT NULL,
-
     resolution TEXT,
-
     ticket_priority TEXT NOT NULL,
-
     ticket_channel TEXT NOT NULL,
-
     first_response_time TEXT,
-
     time_to_resolution TEXT,
-
-    purchase_date TEXT
-
+    
     customer_satisfaction_rating INTEGER
         CHECK(customer_satisfaction_rating BETWEEN 1 AND 5),
 
@@ -57,5 +47,4 @@ CREATE TABLE tickets (
 
     FOREIGN KEY(ticket_type_id)
         REFERENCES ticket_types(ticket_type_id)
-
 );

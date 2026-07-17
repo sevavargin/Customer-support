@@ -1,4 +1,30 @@
+# Customer Support Analysis
 
+Проект по анализу системы поддержки клиентов (Customer Support). Включает работу с синтетическим датасетом тикетов поддержки, SQL-базой данных, Exploratory Data Analysis (EDA), базовыми и продвинутыми запросами, а также ML-моделирование для классификации обращений.
+
+## Структура проекта
+```bash
+Customer-support/
+├── data/
+│   ├── raw/
+│   │   ├── customer_support_tickets.csv
+│   │   └── complaints_processed.csv
+│   └── processed/
+│       └── customer_support.db
+├── sql/
+│   ├── create_tables.sql
+│   ├── basic_queries.sql
+│   └── advanced_queries.sql
+├── notebooks/
+│   ├── eda.ipynb
+│   ├── support.ipynb
+│   ├── basic_queries.ipynb
+│   └── advanced_queries.ipynb
+├── ML/
+│   └── ML.ipynb
+├── diagram.bpmn
+└── README.md
+```
 Проект по анализу системы поддержки клиентов (Customer Support). Включает работу с синтетическим датасетом тикетов поддержки, SQL-базой данных, EDA, базовыми и продвинутыми запросами, а также ML для классификации обращений.
 
 

@@ -49,7 +49,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn sqlite3 jupyter
 4. **Запустите Juiter**
 
 
-# Цели проекта
+## Цели проекта
 
 Освоить полный цикл анализа данных на Customer Support
 Практика SQL (от простых к сложным запросам)

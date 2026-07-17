@@ -44,12 +44,12 @@
 pip install pandas numpy matplotlib seaborn scikit-learn sqlite3 jupyter
 
 3. **Создайте базу данных**
-# Запустите notebook support.ipynb или выполните SQL-скрипты
+ Запустите notebook support.ipynb или выполните SQL-скрипты
 
 4. **Запустите Juiter**
 
 
-Цели проекта
+# Цели проекта
 
 Освоить полный цикл анализа данных на Customer Support
 Практика SQL (от простых к сложным запросам)
